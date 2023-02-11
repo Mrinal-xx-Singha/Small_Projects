@@ -1,25 +1,20 @@
 *{
-  margin: 20px;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
 }
 .speech{
   background-color: black;
-}
-
-.group{
-  overflow-y: inherit;
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  margin: 20px;
-}
-.textarea{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin: 20px;
+}
 
+.group1 Button{
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  display: inline-block;
 
 }
+
+

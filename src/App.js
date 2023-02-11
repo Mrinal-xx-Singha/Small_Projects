@@ -18,23 +18,43 @@ function App() {
   return (
     <div className='speech'>
       <Box
-      sx={{color:'black'}}
+      sx={{
+        padding:'50px',
+        margin:'50px',
+        width:'100vh',
+        height:'100vh',
+         color:'black'}}
        >
       <div className='group'>
-        <Typography variant='h4' color='#fff'>Text to Speech Converter using React</Typography>
+        <Typography variant='h4'
+         color='#fff'
+        sx={{p:2,m:2,
+        fontFamily:'roboto'}}>Text to Speech Converter using React</Typography>
       </div>
       <div className='group'>
         <TextField id='standard-basic' 
-        label='filled' 
         variant='filled'
         sx={{color:'blue',
+        border:'gray',
+        outline:'none',
+        p:2,m:2,
+        maxWidth:'100%',
         backgroundColor:'#fff'
          ,height:'20%', width:'100%'}}
          rows={10} onChange={(e) => setValue(e.target.value)}>
            </TextField>
-      <div className='group'>
+      <div className='group1'>
         <Button variant='outlined'
-        sx={{ color:'gray', backgroundColor:'#fff'}} 
+        sx={{
+          justifyContent:'center',
+          display:'inline-block',
+          alignItems:'center',
+          textDecoration:'none', 
+          width:'20vh',
+          height:'10vh',
+          p:2,
+          m:2,
+          color:'gray', backgroundColor:'#fff'}} 
         onClick={()=> speak({text:value})}>
           Speech
         </Button>
