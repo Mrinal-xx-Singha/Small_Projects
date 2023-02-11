@@ -1,3 +1,5 @@
+import { Button, Typography, TextField } from '@mui/material';
+import { Box } from '@mui/system';
 import React from 'react';
 import { useState } from 'react';
 
@@ -15,19 +17,24 @@ function App() {
 
   return (
     <div className='speech'>
+      <Box>
       <div className='group'>
-        <h2> Text to Speech Converter using React</h2> 
+        <Typography variant='h4' color={'black'}>Text to Speech Converter using React</Typography>
       </div>
       <div className='group'>
-        <textarea rows={10} onChange={(e) => setValue(e.target.value)}>
-           </textarea>
+        <TextField id='standard-basic' 
+        label='filled' 
+        variant='filled'
+        
+         rows={10} onChange={(e) => setValue(e.target.value)}>
+           </TextField>
       <div className='group'>
-        <button onClick={()=> speak({text:value})}>
+        <Button variant='outlined' onClick={()=> speak({text:value})}>
           Speech
-        </button>
-
+        </Button>
       </div>
       </div>
+      </Box>
     </div>
 
   );
