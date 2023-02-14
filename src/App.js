@@ -16,6 +16,10 @@ function App() {
 
 
   return (
+    <div className='Header'>
+      <Typography variant='h1' sx={{backgroundColor:'black' ,color:'#fff', fontWeight:'200rem',fontFamily:'roboto',
+    alignContent:'center',display:'flex', justifyContent:'center',
+    textDecoration:'none',fontSize:'50px'}}>Made By- @Mrinal Singha</Typography>
     <div className='speech'>
       <Box
       sx={{
@@ -46,6 +50,7 @@ function App() {
       <div className='group1'>
         <Button variant='outlined'
         sx={{
+
           justifyContent:'center',
           display:'inline-block',
           alignItems:'center',
@@ -61,6 +66,7 @@ function App() {
       </div>
       </div>
       </Box>
+    </div>
     </div>
 
   );
