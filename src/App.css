@@ -10,11 +10,13 @@
   align-items: center;
 }
 
-.group1 Button{
+.group group1 Button{
   text-align: center;
   align-content: center;
   align-items: center;
-  display: inline-block;
+  display: flex;
+  padding: auto;
+  vertical-align: middle;
 
 }
 
