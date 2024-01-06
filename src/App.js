@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className='Header'>
-      <Typography variant='h1' sx={{backgroundColor:'black' ,color:'#fff', fontWeight:'200rem',fontFamily:'roboto',
+      <Typography variant='h1' sx={{backgroundColor:'#fff' ,color:'#black', fontWeight:'200rem',fontFamily:'roboto',
     alignContent:'center',display:'flex', justifyContent:'center',
     textDecoration:'none',fontSize:'50px',}}>Made By- @Mrinal Singha</Typography>
     <div className='speech'>
@@ -27,19 +27,19 @@ function App() {
         margin:'50px',
         width:'100vh',
         height:'100vh',
-         color:'black'}}
+         color:'#fff'}}
        >
       <div className='group'>
         <Typography variant='h4'
-         color='#fff'
+         color='black'
         sx={{p:2,m:2,
         fontFamily:'roboto'}}>Text to Speech Converter using React</Typography>
       </div>
       <div className='group'>
         <TextField id='standard-basic' 
         variant='filled'
-        sx={{color:'blue',
-        border:'gray',
+        sx={{color:'none',
+        border:'none',
         outline:'none',
         p:2,m:2,
         maxWidth:'100%',
@@ -47,8 +47,8 @@ function App() {
          ,height:'20%', width:'100%'}}
          rows={10} onChange={(e) => setValue(e.target.value)}>
            </TextField>
-      <div className='group1'>
         <Button variant='outlined'
+        width='20px' 
         sx={{
           justifyContent:'center',
           display:'inline-block',
@@ -62,7 +62,6 @@ function App() {
         onClick={()=> speak({text:value})}>
           Speech
         </Button>
-      </div>
       </div>
       </Box>
     </div>
