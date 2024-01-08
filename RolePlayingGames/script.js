@@ -181,6 +181,7 @@ function goFight() {
 function attack() {
   text.innerText = "The " + monsters[fighting].name + " attacks.";
   text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
+<<<<<<< HEAD
   health -= getMonsterAttackValue(monsters[fighting].level);
   if (isMonsterHit()) {
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;    
@@ -250,4 +251,9 @@ function easterEgg() {
 
 function pick(guess) {
 
+=======
+  health -= monsters[fighting].level;
+  monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
+
+>>>>>>> d645543dafb7ba9806d62a4890e107d1c4aa99ba
 }
