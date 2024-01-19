@@ -1,1 +1,1 @@
-https://small-projects-drab.vercel.app/
+[DEPLOYED](https://small-projects-drab.vercel.app/)
