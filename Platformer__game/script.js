@@ -63,7 +63,6 @@ class Platform {
   }
 }
 
-
 class CheckPoint {
   constructor(x, y) {
     this.position = {
@@ -73,13 +72,17 @@ class CheckPoint {
     this.width = 40;
     this.height = 70;
   };
-  draw(){
-   ctx.fillStyle("#f1be32")
-   ctx.fillRect(x,y,width,height)
+
+  draw() {
+    ctx.fillStyle = "#f1be32";
+    ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
   }
-
+  claim() {
+    this.width = 0;
+    this.height = 0;
+    this.position.y = Infinity;
+  }
 };
-
 
 const player = new Player();
 
@@ -102,12 +105,26 @@ const platforms = platformPositions.map(
   (platform) => new Platform(platform.x, platform.y)
 );
 
+const checkpointPositions = [
+  { x: 1170, y: 80 },
+  { x: 2900, y: 330 },
+  { x: 4800, y: 80 },
+];
+
+const checkpoints = checkpointPositions.map(
+  checkpoint => new CheckPoint(checkpoint.x, checkpoint.y)
+);
+
 const animate = () => {
   requestAnimationFrame(animate);
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   platforms.forEach((platform) => {
     platform.draw();
+  });
+
+  checkpoints.forEach(checkpoint => {
+    checkpoint.draw();
   });
 
   player.update();
@@ -123,6 +140,9 @@ const animate = () => {
       platforms.forEach((platform) => {
         platform.position.x -= 5;
       });
+
+
+
     } else if (keys.leftKey.pressed && isCheckpointCollisionDetectionActive) {
       platforms.forEach((platform) => {
         platform.position.x += 5;
