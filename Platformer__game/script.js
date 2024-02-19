@@ -74,7 +74,8 @@ class CheckPoint {
     this.height = 70;
   };
   draw(){
-   
+   ctx.fillStyle("#f1be32")
+   ctx.fillRect(x,y,width,height)
   }
 
 };
