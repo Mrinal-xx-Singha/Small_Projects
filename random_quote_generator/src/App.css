@@ -1,15 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background: rgb(10, 10, 10);
-
 }
-.App{
+.App {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,9 +17,8 @@ body{
   height: 100vh;
 }
 
-
-#text{
-  font-size:xx-large;
+#text {
+  font-size: xx-large;
   text-align: center;
   margin: 79px auto;
   justify-content: center;
@@ -30,9 +28,7 @@ body{
   padding: auto 20px;
 }
 
-
-
-button{
+button {
   font-weight: 800;
   text-align: center;
   align-items: center;
@@ -40,10 +36,9 @@ button{
   padding: 0 25px 25px;
   margin: 20px auto;
 }
-#author{
-  color:#ffff;
+#author {
+  color: #ffff;
   margin-bottom: 25px;
   padding: 0 25px;
   text-align: center;
-
 }

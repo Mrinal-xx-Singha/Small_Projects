@@ -1,11 +1,11 @@
-import "./App.css"
-import Quotes from "./Quotes"
+import "./App.css";
+import Quotes from "./Quotes";
 const App = () => {
   return (
     <div className="App">
       <Quotes />
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
