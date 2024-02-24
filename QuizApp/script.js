@@ -94,12 +94,12 @@ const selectAnswer = (e) => {
   nextButton.style.display = "block";
 };
 
-const showScore = () =>{
-  resetState()
+const showScore = () => {
+  resetState();
   questionElement.innerHTML = `You Scored ${score} out of ${questions.length} !`;
   nextButton.innerHTML = "Play Again";
-  nextButton.style.display ="block";
-}
+  nextButton.style.display = "block";
+};
 
 const handleNextButton = () => {
   currentQuestionIndex++;
