@@ -16,7 +16,7 @@ const Cart = () => {
   };
 
   const cards = products.map((product) => (
-    <div className="col-md-12  d-flex align-items-center justify-content-center gap-5" style={{ marginBottom: "10px" }}>
+    <div className="col-md-12" style={{ marginBottom: "10px" }}>
       <Card
         className="h-100 "
         key={product.id}
@@ -43,8 +43,8 @@ const Cart = () => {
 
   return (
     <>
-      <div className="container d-flex align-items-center text-center">
-        <div className="row align-items-center">{cards}</div>
+      <div className="container d-flex align-items-center justify-content-center text-center">
+        <div className="  align-items-center">{cards}</div>
       </div>
     </>
   );

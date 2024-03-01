@@ -10,7 +10,7 @@ const NavBar = () => {
     <>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
-          <Navbar.Brand href="#">M.s Store</Navbar.Brand>
+          <Navbar.Brand to="/" as={Link}>M.s Store</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
