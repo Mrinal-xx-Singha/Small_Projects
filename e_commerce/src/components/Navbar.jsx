@@ -5,12 +5,14 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  const cartProducts = useSelector(state => state.cart)
+  const cartProducts = useSelector((state) => state.cart);
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
-          <Navbar.Brand to="/" as={Link}>M.s Store</Navbar.Brand>
+          <Navbar.Brand to="/" as={Link}>
+            M.s Store
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -21,15 +23,14 @@ const NavBar = () => {
               <Nav.Link to="/" as={Link}>
                 Products
               </Nav.Link>
-            
             </Nav>
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
-                <Navbar.Text>
+              <Navbar.Text>
                 <Nav.Link to="/cart" as={Link}>
-                Cart {cartProducts.length}
-              </Nav.Link>
-                </Navbar.Text>
+                  Cart {cartProducts.length}
+                </Nav.Link>
+              </Navbar.Text>
             </Navbar.Collapse>
           </Navbar.Collapse>
         </Container>
