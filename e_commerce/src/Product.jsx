@@ -81,7 +81,7 @@ const Product = () => {
             Add to Cart
           </Button>
           
-          {/* Hear Button */}
+          {/* Heart Button */}
           <Button
           style={{fontSize:"1.2rem",marginLeft:"20px"}}
             variant="link"
@@ -114,7 +114,7 @@ const Product = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container container-sm container-md text-center">
       <h1 className="text-center">Product Dashboard</h1>
       <div className="toggle d-flex justify-content-evenly align-items-center text-center mb-4 mt-4">
         <Form className="d-flex border border-secondary">
@@ -143,7 +143,7 @@ const Product = () => {
           </Dropdown>
         </div>
       </div>
-      <div className="row">{cards}</div>
+      <div className="row text-center">{cards}</div>
     </div>
   );
 };
